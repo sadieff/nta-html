@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#Национальный шинный альянс</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="js/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/fb/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script src="js/scroll/jquery.jscrollpane.js"></script>
+    <script src="js/scroll/jquery.mousewheel.js"></script>
+    <script src="js/fb/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d69c24a-14dd-41e7-91ff-60bee477e82c"></script>
+    <script src="js/map.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="header-wrap">
+        <div class="header-top">
+            <div class="header-top_hidden">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <a href="#" class="header-top_logo"></a>
+                        <a href="#" class="header-top_select">
+                            Подбор шин
+                        </a>
+                        <div class="header-top_call">
+                            <div class="header-top_phone">
+                                +7 (495) 252 04-45
+                            </div>
+                            <div class="header-top_recall">
+                                Заказать звонок
+                            </div>
+                        </div>
+                        <a href="#" class="header-top_mail">
+                            info@nta-tyre.ru
+                        </a>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                        <a href="#" class="header-top_cart">
+                            Корзина
+                            <span>3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top_start">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <div class="header-top_search">
+                            <input type="text" name="srch" placeholder="Поиск">
+                            <button></button>
+                        </div>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="menu-open">
+                <span></span>
+            </div>
+
+            <div class="header-main row">
+                <div class="col-xl-5 col-lg-5 col-md-6 offset-2 offset-md-0 col-8">
+                    <a href="/" class="header-logo"></a>
+                </div>
+                <div class="offset-xl-1 col-xl-6 offset-lg-1 col-lg-6 col-md-6 col-2 header-contacts">
+                    <div class="header-contacts_wrap">
+                        <a href="tel:+74952520445" class="header-phone">
+                            +7 (495) 252 04-45
+                        </a>
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                    </div>
+                    <div class="header-recall">
+                        <div class="header-recall_button">
+                            Заказать звонок
+                        </div>
+                    </div>
+                    <div class="header-shop">
+                        <div class="header-bascket">
+                            Корзина <span>3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav">
+
+                <div class="header-nav_box">
+                    <div class="header-search">
+                        <input type="text" name="srch" placeholder="Поиск">
+                        <button></button>
+                    </div>
+
+                    <div class="header-cabinet">
+                        <div>
+                            <div class="header-login popup-login_js">
+                                Личный кабинет
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-nav_compare popup-login_js">
+                                Сравнение <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav_contacts">
+                    <a href="tel:+7(495)25204-45" class="header-nav_phone">
+                        +7 (495) 252 04-45
+                    </a>
+                    <div class="header-nav_contacts_box">
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                        <div class="header-nav_recall">
+                            Заказать звонок
+                        </div>
+                    </div>
+                </div>
+                <!--div class="header-select_wrap">
+                    <a href="#" class="header-top_select">
+                        Подбор шин
+                    </a>
+                </div-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li class="active"><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header> <!-- header -->
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li>Ошибка 404</li>
+            </ul>
+        </div>
+    </div> <!-- breadcrumb -->
+
+    <div class="container">
+        <div class="page-404">
+            <div class="page-404_title">
+                Страница не найдена
+            </div>
+            <div class="page-404_image">
+                <img src="images/404.jpg" alt="">
+            </div>
+            <div class="page-404_text">
+                Страница к которой вы обращаетесь не существует.<br>
+                Воспользуйтесь меню сайта, чтобы попасть куда надо!
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-home">
+        <div class="container">
+            <div class="filter-home_title">
+                Поиск
+            </div>
+            <div class="filter-form">
+                <div class="filter-item mm">
+                    <div class="filter-item_title">
+                        Применяемость <span></span>
+                    </div>
+                    <div class="filter-overlay"></div>
+                    <div class="filter-item_wrap">
+                        <div class="filter-select">
+                            <span>Все</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="filter-content_buttons">
+                                <div class="filter-content_add">
+                                    Подобрать
+                                </div>
+                                <div class="filter-content_clear">
+                                    Сбросить
+                                </div>
+                            </div>
+                            <div class="filter-content_system">
+                                <span>Показать в</span>
+                                <div class="filter-content_system-wrap">
+                                    <label class="input-radio">
+                                        <input type="radio" value="in" class="sys-type" name="prim-system">
+                                        <span>дюймах</span>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input checked="checked" type="radio" value="mm" class="sys-type" name="prim-system">
+                                        <span>миллиметрах</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-content_list">
+                                <label class="input-checkbox">
+                                    <input disabled="disabled" type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input disabled="disabled" checked="checked" type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-item mm">
+                    <div class="filter-item_title">
+                        Типоразмер <span></span>
+                    </div>
+                    <div class="filter-overlay"></div>
+                    <div class="filter-item_wrap">
+                        <div class="filter-select">
+                            <span>Все</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="filter-content_buttons">
+                                <div class="filter-content_add">
+                                    Подобрать
+                                </div>
+                                <div class="filter-content_clear">
+                                    Сбросить
+                                </div>
+                            </div>
+                            <div class="filter-content_system">
+                                <span>Показать в</span>
+                                <div class="filter-content_system-wrap">
+                                    <label class="input-radio">
+                                        <input type="radio" value="in" class="sys-type" name="razm-system">
+                                        <span>дюймах</span>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input checked="checked" type="radio" value="mm" class="sys-type" name="razm-system">
+                                        <span>миллиметрах</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-content_list">
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-item_title">
+                        Производитель <span></span>
+                    </div>
+                    <div class="filter-overlay"></div>
+                    <div class="filter-item_wrap">
+                        <div class="filter-select">
+                            <span>Все</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="filter-content_buttons">
+                                <div class="filter-content_add">
+                                    Подобрать
+                                </div>
+                                <div class="filter-content_clear">
+                                    Сбросить
+                                </div>
+                            </div>
+                            <div class="filter-content_list">
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span>Mitas</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span>Continental</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span>Cultor</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-item mm">
+                    <div class="filter-item_title">
+                        Посадочный диаметр <span></span>
+                    </div>
+                    <div class="filter-overlay"></div>
+                    <div class="filter-item_wrap">
+                        <div class="filter-select">
+                            <span>Все</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="filter-content_buttons">
+                                <div class="filter-content_add">
+                                    Подобрать
+                                </div>
+                                <div class="filter-content_clear">
+                                    Сбросить
+                                </div>
+                            </div>
+                            <div class="filter-content_system">
+                                <span>Показать в</span>
+                                <div class="filter-content_system-wrap">
+                                    <label class="input-radio">
+                                        <input type="radio" value="in" class="sys-type" name="diam-system">
+                                        <span>дюймах</span>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input checked="checked" type="radio" value="mm" class="sys-type" name="diam-system">
+                                        <span>миллиметрах</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-content_list">
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                                <label class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="in">10-16.5</span>
+                                    <span class="mm">121-165</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-form_button-box">
+                    <button class="filter-form_button">
+                        Подобрать
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="brands-home">
+            <a href="#" class="brands-home_item">
+                <span>
+                    <img src="images/image-5.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item">
+                <span>
+                    <img src="images/image-6.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item active">
+                <span>
+                    <img src="images/image-3.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item active">
+                <span>
+                    <img src="images/image-4.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item">
+                <span>
+                    <img src="images/image-7.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item">
+                <span>
+                    <img src="images/image-8.jpg" alt="">
+                </span>
+            </a>
+            <a href="#" class="brands-home_item">
+                <span>
+                    <img src="images/image-9.jpg" alt="">
+                </span>
+            </a>
+        </div>
+    </div> <!-- filter-home -->
+
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-6">
+                        <div class="footer-logo"></div>
+                        <div class="footer-social">
+                            <a href="#" class="ig"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="in"></a>
+                            <a href="#" class="tw"></a>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Соглашение об обработке персональных данных</a><br>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="footer-contacts">
+                            <div class="footer-phone_wrap">
+                                <a href="tel:+7(495)2520445" class="footer-phone">
+                                    + 7 (495) 252 04 45
+                                </a>
+                            </div>
+                            <div class="footer-recall">
+                                Заказать звонок
+                            </div>
+                            <div class="footer-time">
+                                пн-чтв. с 9:00 до 18:00<br>
+                                пт. с 9:00 до 17:00
+                            </div>
+                            <a href="mailto:info@nta-tyre.ru" class="footer-email">
+                                info@nta-tyre.ru
+                            </a>
+                            <div class="footer-social mobile">
+                                <a href="#" class="ig"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="in"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                            <div class="footer-links mobile">
+                                <a href="#">Соглашение об обработке персональных данных</a><br>
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                            <div class="footer-copy">
+                                © 1999 - 2020 ООО Национальный<br> шинный альянс
+                            </div>
+                            <div class="footer-dev">
+                                Developed by LEAD Spectrum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- footer -->
+
+    <div class="modal" id="login">
+
+        <div class="modal-tab">
+            <div class="modal-tab_titles">
+                <div class="modal-tab_title active login-tab_js">
+                    Вход
+                </div>
+                <div class="modal-tab_title reg-tab_js">
+                    Регистрация
+                </div>
+            </div>
+            <div class="modal-tab_box">
+                <div class="modal-tab_content active">
+
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-button_box">
+                            <button class="go">Войти</button>
+                            <div>
+                                <a href="#" class="open-getpass_js modal-button_link">Востановисть доступ</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-tab_content">
+                    <div class="modal-dsc">
+                        Для регистрации заполните поля ниже<br>
+                        и нажмите Зарегистрироваться
+                    </div>
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Телефон
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="phone" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                ИНН
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="inn" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Компания
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="company" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Почта
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="email" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Подтвердите пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+
+                        <div class="modal-input">
+                            <label class="input-checkbox">
+                                <input type="checkbox" name="agreement" checked="checked">
+                                <span>Я согласен с Политикой обработки данных и Пользовательским соглашением</span>
+                            </label>
+                        </div>
+
+                        <div class="modal-button_box">
+                            <button class="go">Зарегистрироваться</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- modal login -->
+
+    <div class="modal" id="getpassword">
+        <div class="modal-title">
+            Востановление доступа
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Для восстановления доступа напишите вашу почту, указанную при регистрации, и мы вышлем Вам письмо с интсрукцией по востановлению
+            </div>
+            <form action="">
+                <div class="modal-input">
+                    <div class="modal-input_label">
+                        Почта
+                    </div>
+                    <div class="modal-input_input">
+                        <input type="text" name="email" autocomplete="off" data-rules="required">
+                    </div>
+                </div>
+                <div class="modal-button_box">
+                    <button class="go">Востановить доступ</button>
+                    <div>
+                        <a href="#" class="open-login_js modal-button_link">вернуться назад</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="modal" id="success">
+        <div class="modal-title">
+            Поздравляем!
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Регистрация почты завершена.<br>
+                Для подтверждения учетной записи перейдите по ссылке в письме и дождитесь проверки администратора
+            </div>
+            <div class="modal-button_box">
+                <a href="/" class="modal-button_back">
+                    На главную страницу
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-order" id="modal-order">
+        <div class="modal-title">
+            Заказ №1 от 01.01.2020
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-order_status">
+                Статус заказа: <span>Выполнен</span>
+            </div>
+
+            <div class="modal-order_enum">
+                <div class="modal-order_title">
+                    <span class="model-title_num">
+                        №
+                    </span>
+                    <span class="modal-title_name">
+                        Наименование
+                    </span>
+                    <span class="modal-title_count">
+                        Количество
+                    </span>
+                    <span class="modal-title_price">
+                        Сумма
+                    </span>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-order_total">
+                Итого: 160 шт.<br> на сумму <span>124 224 р.</span>
+            </div>
+
+            <div class="modal-order_button_box">
+                <button class="go">Повторить заказ</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

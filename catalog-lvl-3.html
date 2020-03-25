@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#Национальный шинный альянс</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="js/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/fb/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script src="js/scroll/jquery.jscrollpane.js"></script>
+    <script src="js/scroll/jquery.mousewheel.js"></script>
+    <script src="js/fb/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d69c24a-14dd-41e7-91ff-60bee477e82c"></script>
+    <script src="js/map.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="header-wrap">
+        <div class="header-top">
+            <div class="header-top_hidden">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <a href="#" class="header-top_logo"></a>
+                        <a href="#" class="header-top_select">
+                            Подбор шин
+                        </a>
+                        <div class="header-top_call">
+                            <div class="header-top_phone">
+                                +7 (495) 252 04-45
+                            </div>
+                            <div class="header-top_recall">
+                                Заказать звонок
+                            </div>
+                        </div>
+                        <a href="#" class="header-top_mail">
+                            info@nta-tyre.ru
+                        </a>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                        <a href="#" class="header-top_cart">
+                            Корзина
+                            <span>3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top_start">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <div class="header-top_search">
+                            <input type="text" name="srch" placeholder="Поиск">
+                            <button></button>
+                        </div>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="menu-open">
+                <span></span>
+            </div>
+
+            <div class="header-main row">
+                <div class="col-xl-5 col-lg-5 col-md-6 offset-2 offset-md-0 col-8">
+                    <a href="/" class="header-logo"></a>
+                </div>
+                <div class="offset-xl-1 col-xl-6 offset-lg-1 col-lg-6 col-md-6 col-2 header-contacts">
+                    <div class="header-contacts_wrap">
+                        <a href="tel:+74952520445" class="header-phone">
+                            +7 (495) 252 04-45
+                        </a>
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                    </div>
+                    <div class="header-recall">
+                        <div class="header-recall_button">
+                            Заказать звонок
+                        </div>
+                    </div>
+                    <div class="header-shop">
+                        <div class="header-bascket">
+                            Корзина <span>3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav">
+
+                <div class="header-nav_box">
+                    <div class="header-search">
+                        <input type="text" name="srch" placeholder="Поиск">
+                        <button></button>
+                    </div>
+
+                    <div class="header-cabinet">
+                        <div>
+                            <div class="header-login popup-login_js">
+                                Личный кабинет
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-nav_compare popup-login_js">
+                                Сравнение <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav_contacts">
+                    <a href="tel:+7(495)25204-45" class="header-nav_phone">
+                        +7 (495) 252 04-45
+                    </a>
+                    <div class="header-nav_contacts_box">
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                        <div class="header-nav_recall">
+                            Заказать звонок
+                        </div>
+                    </div>
+                </div>
+                <!--div class="header-select_wrap">
+                    <a href="#" class="header-top_select">
+                        Подбор шин
+                    </a>
+                </div-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li class="active"><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header> <!-- header -->
+
+    <div class="breadcrumb breadcrumb-absolute breadcrumb-hide-home">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Индустриальные шины</a></li>
+                <li>Шины для вилочных погрузчиков</li>
+            </ul>
+        </div>
+    </div> <!-- breadcrumb -->
+
+    <div class="section-detail">
+        <div class="container">
+            <div class="section-detail_title">
+                <span>Шины</span> Сultor SKID STEER 50
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                    <div class="section-detail_image">
+                        <div class="section-detail_brand">
+                            <img src="images/image-8.jpg" alt="">
+                        </div>
+                        <div class="section-detail_type">
+                            <img src="images/icon-1.png" alt="">
+                        </div>
+                        <img src="images/product-3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="section-detail_ttl">
+                        Описание товара
+                    </div>
+                    <div class="section-detail_dsc">
+                        Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.
+                    </div>
+                    <div class="section-detail_ttl">
+                        Промышленные шины Cultor - мощные и эффективные
+                    </div>
+                    <ul class="section-detail_info">
+                        <li>Агропромышленный</li>
+                        <li>Бортовой руль</li>
+                        <li>Промышленный</li>
+                        <li>МРТ и легкогрузовые</li>
+                    </ul>
+                    <div class="section-detail_buttons">
+                        <a href="#" class="section-detail_sizes">Размеры</a>
+                        <a href="#" class="section-detail_button">Подробнее о бренде Cultor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- section-detail -->
+
+    <div class="section-list section-detail_list">
+        <div class="container">
+            <div class="section-list_title">
+                Товары данное модели
+            </div>
+
+            <div class="section-list_enum">
+                <div class="section-header">
+                    <span>Фото</span>
+                    <span>Наименование</span>
+                    <span class="prop-1">Посадочный<br> диаметр</span>
+                    <span class="prop-2">Типоразмер</span>
+                    <span class="prop-3">Слойность</span>
+                    <span class="prop-quantity">Наличие</span>
+                    <span>Кол-во</span>
+                    <span>Стоимость</span>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-item_image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <a href="#" class="section-item_name">
+                        Cultor Skid Steer 50
+                    </a>
+                    <div class="section-item_property prop-1" data-title="Посадочный диаметр">
+                        16.5
+                    </div>
+                    <div class="section-item_property prop-2" data-title="Типоразмер">
+                        10-16.5
+                    </div>
+                    <div class="section-item_property prop-3" data-title="Слойность">
+                        10PR
+                    </div>
+                    <div class="section-item_quantity">
+                        <span class="step-3"></span>
+                    </div>
+                    <div class="section-item_count">
+                        <div class="section-item_count-wrap">
+                            <span class="count-minus">-</span>
+                            <input type="text" name="quantity" value="1" >
+                            <span class="count-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="section-item_price">
+                        175 500 р.
+                    </div>
+                    <div class="section-item_actions">
+                        <div class="section-item_button add-bascket_js">
+                            Купить
+                        </div>
+                        <div class="section-item_compare add-compare_js">
+                            В сравнение
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- section-list -->
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-6">
+                        <div class="footer-logo"></div>
+                        <div class="footer-social">
+                            <a href="#" class="ig"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="in"></a>
+                            <a href="#" class="tw"></a>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Соглашение об обработке персональных данных</a><br>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="footer-contacts">
+                            <div class="footer-phone_wrap">
+                                <a href="tel:+7(495)2520445" class="footer-phone">
+                                    + 7 (495) 252 04 45
+                                </a>
+                            </div>
+                            <div class="footer-recall">
+                                Заказать звонок
+                            </div>
+                            <div class="footer-time">
+                                пн-чтв. с 9:00 до 18:00<br>
+                                пт. с 9:00 до 17:00
+                            </div>
+                            <a href="mailto:info@nta-tyre.ru" class="footer-email">
+                                info@nta-tyre.ru
+                            </a>
+                            <div class="footer-social mobile">
+                                <a href="#" class="ig"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="in"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                            <div class="footer-links mobile">
+                                <a href="#">Соглашение об обработке персональных данных</a><br>
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                            <div class="footer-copy">
+                                © 1999 - 2020 ООО Национальный<br> шинный альянс
+                            </div>
+                            <div class="footer-dev">
+                                Developed by LEAD Spectrum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- footer -->
+
+    <div class="modal" id="login">
+
+        <div class="modal-tab">
+            <div class="modal-tab_titles">
+                <div class="modal-tab_title active login-tab_js">
+                    Вход
+                </div>
+                <div class="modal-tab_title reg-tab_js">
+                    Регистрация
+                </div>
+            </div>
+            <div class="modal-tab_box">
+                <div class="modal-tab_content active">
+
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-button_box">
+                            <button class="go">Войти</button>
+                            <div>
+                                <a href="#" class="open-getpass_js modal-button_link">Востановисть доступ</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-tab_content">
+                    <div class="modal-dsc">
+                        Для регистрации заполните поля ниже<br>
+                        и нажмите Зарегистрироваться
+                    </div>
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Телефон
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="phone" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                ИНН
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="inn" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Компания
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="company" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Почта
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="email" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Подтвердите пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+
+                        <div class="modal-input">
+                            <label class="input-checkbox">
+                                <input type="checkbox" name="agreement" checked="checked">
+                                <span>Я согласен с Политикой обработки данных и Пользовательским соглашением</span>
+                            </label>
+                        </div>
+
+                        <div class="modal-button_box">
+                            <button class="go">Зарегистрироваться</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- modal login -->
+
+    <div class="modal" id="getpassword">
+        <div class="modal-title">
+            Востановление доступа
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Для восстановления доступа напишите вашу почту, указанную при регистрации, и мы вышлем Вам письмо с интсрукцией по востановлению
+            </div>
+            <form action="">
+                <div class="modal-input">
+                    <div class="modal-input_label">
+                        Почта
+                    </div>
+                    <div class="modal-input_input">
+                        <input type="text" name="email" autocomplete="off" data-rules="required">
+                    </div>
+                </div>
+                <div class="modal-button_box">
+                    <button class="go">Востановить доступ</button>
+                    <div>
+                        <a href="#" class="open-login_js modal-button_link">вернуться назад</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="modal" id="success">
+        <div class="modal-title">
+            Поздравляем!
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Регистрация почты завершена.<br>
+                Для подтверждения учетной записи перейдите по ссылке в письме и дождитесь проверки администратора
+            </div>
+            <div class="modal-button_box">
+                <a href="/" class="modal-button_back">
+                    На главную страницу
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-order" id="modal-order">
+        <div class="modal-title">
+            Заказ №1 от 01.01.2020
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-order_status">
+                Статус заказа: <span>Выполнен</span>
+            </div>
+
+            <div class="modal-order_enum">
+                <div class="modal-order_title">
+                    <span class="model-title_num">
+                        №
+                    </span>
+                    <span class="modal-title_name">
+                        Наименование
+                    </span>
+                    <span class="modal-title_count">
+                        Количество
+                    </span>
+                    <span class="modal-title_price">
+                        Сумма
+                    </span>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-order_total">
+                Итого: 160 шт.<br> на сумму <span>124 224 р.</span>
+            </div>
+
+            <div class="modal-order_button_box">
+                <button class="go">Повторить заказ</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

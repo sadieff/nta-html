@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#Национальный шинный альянс</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="js/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/fb/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script src="js/scroll/jquery.jscrollpane.js"></script>
+    <script src="js/scroll/jquery.mousewheel.js"></script>
+    <script src="js/fb/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d69c24a-14dd-41e7-91ff-60bee477e82c"></script>
+    <script src="js/map.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="header-wrap">
+        <div class="header-top">
+            <div class="header-top_hidden">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <a href="#" class="header-top_logo"></a>
+                        <a href="#" class="header-top_select">
+                            Подбор шин
+                        </a>
+                        <div class="header-top_call">
+                            <div class="header-top_phone">
+                                +7 (495) 252 04-45
+                            </div>
+                            <div class="header-top_recall">
+                                Заказать звонок
+                            </div>
+                        </div>
+                        <a href="#" class="header-top_mail">
+                            info@nta-tyre.ru
+                        </a>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                        <a href="#" class="header-top_cart">
+                            Корзина
+                            <span>3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top_start">
+                <div class="container">
+                    <div class="header-top_wrap">
+                        <div class="header-top_search">
+                            <input type="text" name="srch" placeholder="Поиск">
+                            <button></button>
+                        </div>
+                        <a href="#" class="header-top_cabinet">
+                            Личный кабинет
+                        </a>
+                        <a href="#" class="header-top_compare">
+                            Сравнить
+                            <span>2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="menu-open">
+                <span></span>
+            </div>
+
+            <div class="header-main row">
+                <div class="col-xl-5 col-lg-5 col-md-6 offset-2 offset-md-0 col-8">
+                    <a href="/" class="header-logo"></a>
+                </div>
+                <div class="offset-xl-1 col-xl-6 offset-lg-1 col-lg-6 col-md-6 col-2 header-contacts">
+                    <div class="header-contacts_wrap">
+                        <a href="tel:+74952520445" class="header-phone">
+                            +7 (495) 252 04-45
+                        </a>
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                    </div>
+                    <div class="header-recall">
+                        <div class="header-recall_button">
+                            Заказать звонок
+                        </div>
+                    </div>
+                    <div class="header-shop">
+                        <div class="header-bascket">
+                            Корзина <span>3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav">
+
+                <div class="header-nav_box">
+                    <div class="header-search">
+                        <input type="text" name="srch" placeholder="Поиск">
+                        <button></button>
+                    </div>
+
+                    <div class="header-cabinet">
+                        <div>
+                            <div class="header-login popup-login_js">
+                                Личный кабинет
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-nav_compare popup-login_js">
+                                Сравнение <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav_contacts">
+                    <a href="tel:+7(495)25204-45" class="header-nav_phone">
+                        +7 (495) 252 04-45
+                    </a>
+                    <div class="header-nav_contacts_box">
+                        <a href="mailto:info@nta-tyre.ru" class="header-email">
+                            info@nta-tyre.ru
+                        </a>
+                        <div class="header-nav_recall">
+                            Заказать звонок
+                        </div>
+                    </div>
+                </div>
+                <!--div class="header-select_wrap">
+                    <a href="#" class="header-top_select">
+                        Подбор шин
+                    </a>
+                </div-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li class="active"><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header> <!-- header -->
+
+    <div class="breadcrumb breadcrumb-white">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li>Мотошины Mitas</li>
+            </ul>
+        </div>
+    </div> <!-- breadcrumb -->
+
+    <div class="catalog-main_slider no-counter owl-carousel">
+        <div class="catalog-slider_item">
+            <picture>
+                <source srcset="images/banner-3-mobile.jpg" media="(max-width: 600px)"/>
+                <img src="images/banner-3.jpg" alt="">
+            </picture>
+            <div class="container">
+                <div class="catalog-slider_ttl">
+                    Шины для<br> трактора
+                </div>
+                <div class="catalog-slider_text">
+                    Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.
+                </div>
+                <a href="#" class="catalog-slider_button">
+                    Подробнее о Mitas
+                </a>
+            </div>
+        </div>
+        <div class="catalog-slider_item">
+            <picture>
+                <source srcset="images/banner-3-mobile.jpg" media="(max-width: 600px)"/>
+                <img src="images/banner-3.jpg" alt="">
+            </picture>
+            <div class="container">
+                <div class="catalog-slider_ttl">
+                    Шины для<br> трактора
+                </div>
+                <div class="catalog-slider_text">
+                    Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.
+                </div>
+                <a href="#" class="catalog-slider_button">
+                    Подробнее о Mitas
+                </a>
+            </div>
+        </div>
+    </div> <!-- main-slider -->
+
+    <div class="category-list category-list_small">
+        <div class="container">
+            <div class="category-list_select">
+                <div class="filter-item mm">
+                    <div class="filter-item_title">
+                        Тип шин
+                    </div>
+                    <div class="filter-overlay"></div>
+                    <div class="filter-item_wrap">
+                        <div class="filter-select">
+                            <span>Все</span>
+                        </div>
+                        <div class="filter-content">
+                            <a href="#" class="filter-link">Все</a>
+                            <a href="#" class="filter-link active">Road</a>
+                            <a href="#" class="filter-link">Off-Road</a>
+                            <a href="#" class="filter-link">Enduro</a>
+                            <a href="#" class="filter-link">Trial</a>
+                            <a href="#" class="filter-link">Scooter</a>
+                            <a href="#" class="filter-link">ATV</a>
+                            <a href="#" class="filter-link">Speedway</a>
+                            <a href="#" class="filter-link">Buggy</a>
+                            <a href="#" class="filter-link">Kart</a>
+                            <a href="#" class="filter-link">Minimoto</a>
+                            <a href="#" class="filter-link">Moped</a>
+                            <a href="#" class="filter-link">Flat Track</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-list_enum category-list_brands">
+                <a href="#" class="category-list_item active">Road</a>
+                <a href="#" class="category-list_item">Off-Road</a>
+                <a href="#" class="category-list_item">Enduro</a>
+                <a href="#" class="category-list_item">Trial</a>
+                <a href="#" class="category-list_item">Scooter</a>
+                <a href="#" class="category-list_item">ATV</a>
+                <a href="#" class="category-list_item">Speedway</a>
+                <a href="#" class="category-list_item">Buggy</a>
+                <a href="#" class="category-list_item">Kart</a>
+                <a href="#" class="category-list_item">Minimoto</a>
+                <a href="#" class="category-list_item">Moped</a>
+                <a href="#" class="category-list_item">Flat Track</a>
+            </div>
+        </div>
+    </div> <!-- category-list -->
+
+    <div class="category-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="catalog-new_item">
+                        <div class="catalog-new_brand">
+                            <img src="images/image-20.jpg" alt="">
+                        </div>
+                        <div class="catalog-new_image icon-2">
+                            <img src="images/product-2.png" alt="">
+                        </div>
+                        <div class="catalog-new_ttl">
+                            Cultor SKID STEER 50
+                        </div>
+                        <div class="catalog-new_price">
+                            от 175 500 р.
+                        </div>
+                        <a href="#" class="catalog-new_more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="catalog-new_more-box">
+                <a href="#" class="catalog-new_link">
+                    Показать еще
+                </a>
+            </div>
+
+            <div class="catalog-navigation">
+                <a href="#" class="catalog-navigation_prev">
+                    Предыдущая страница
+                </a>
+                <ul>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+                <a href="#" class="catalog-navigation_next">
+                    Предыдущая страница
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-6">
+                        <div class="footer-logo"></div>
+                        <div class="footer-social">
+                            <a href="#" class="ig"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="in"></a>
+                            <a href="#" class="tw"></a>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Соглашение об обработке персональных данных</a><br>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="footer-contacts">
+                            <div class="footer-phone_wrap">
+                                <a href="tel:+7(495)2520445" class="footer-phone">
+                                    + 7 (495) 252 04 45
+                                </a>
+                            </div>
+                            <div class="footer-recall">
+                                Заказать звонок
+                            </div>
+                            <div class="footer-time">
+                                пн-чтв. с 9:00 до 18:00<br>
+                                пт. с 9:00 до 17:00
+                            </div>
+                            <a href="mailto:info@nta-tyre.ru" class="footer-email">
+                                info@nta-tyre.ru
+                            </a>
+                            <div class="footer-social mobile">
+                                <a href="#" class="ig"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="in"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                            <div class="footer-links mobile">
+                                <a href="#">Соглашение об обработке персональных данных</a><br>
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                            <div class="footer-copy">
+                                © 1999 - 2020 ООО Национальный<br> шинный альянс
+                            </div>
+                            <div class="footer-dev">
+                                Developed by LEAD Spectrum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- footer -->
+
+    <div class="modal" id="login">
+
+        <div class="modal-tab">
+            <div class="modal-tab_titles">
+                <div class="modal-tab_title active login-tab_js">
+                    Вход
+                </div>
+                <div class="modal-tab_title reg-tab_js">
+                    Регистрация
+                </div>
+            </div>
+            <div class="modal-tab_box">
+                <div class="modal-tab_content active">
+
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-button_box">
+                            <button class="go">Войти</button>
+                            <div>
+                                <a href="#" class="open-getpass_js modal-button_link">Востановисть доступ</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-tab_content">
+                    <div class="modal-dsc">
+                        Для регистрации заполните поля ниже<br>
+                        и нажмите Зарегистрироваться
+                    </div>
+                    <form action="">
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Логин
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="login" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Телефон
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="phone" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                ИНН
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="inn" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Компания
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="company" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Почта
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="text" name="email" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <div class="modal-input_label">
+                                Подтвердите пароль
+                            </div>
+                            <div class="modal-input_input">
+                                <input type="password" name="password" autocomplete="off" data-rules="required">
+                            </div>
+                        </div>
+
+                        <div class="modal-input">
+                            <label class="input-checkbox">
+                                <input type="checkbox" name="agreement" checked="checked">
+                                <span>Я согласен с Политикой обработки данных и Пользовательским соглашением</span>
+                            </label>
+                        </div>
+
+                        <div class="modal-button_box">
+                            <button class="go">Зарегистрироваться</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- modal login -->
+
+    <div class="modal" id="getpassword">
+        <div class="modal-title">
+            Востановление доступа
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Для восстановления доступа напишите вашу почту, указанную при регистрации, и мы вышлем Вам письмо с интсрукцией по востановлению
+            </div>
+            <form action="">
+                <div class="modal-input">
+                    <div class="modal-input_label">
+                        Почта
+                    </div>
+                    <div class="modal-input_input">
+                        <input type="text" name="email" autocomplete="off" data-rules="required">
+                    </div>
+                </div>
+                <div class="modal-button_box">
+                    <button class="go">Востановить доступ</button>
+                    <div>
+                        <a href="#" class="open-login_js modal-button_link">вернуться назад</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="modal" id="success">
+        <div class="modal-title">
+            Поздравляем!
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-dsc">
+                Регистрация почты завершена.<br>
+                Для подтверждения учетной записи перейдите по ссылке в письме и дождитесь проверки администратора
+            </div>
+            <div class="modal-button_box">
+                <a href="/" class="modal-button_back">
+                    На главную страницу
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-order" id="modal-order">
+        <div class="modal-title">
+            Заказ №1 от 01.01.2020
+        </div>
+        <div class="modal-tab_box">
+            <div class="modal-order_status">
+                Статус заказа: <span>Выполнен</span>
+            </div>
+
+            <div class="modal-order_enum">
+                <div class="modal-order_title">
+                    <span class="model-title_num">
+                        №
+                    </span>
+                    <span class="modal-title_name">
+                        Наименование
+                    </span>
+                    <span class="modal-title_count">
+                        Количество
+                    </span>
+                    <span class="modal-title_price">
+                        Сумма
+                    </span>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+                <div class="modal-order_item">
+                    <div class="modal-order_num" data-title="№">
+                        1
+                    </div>
+                    <div class="modal-order_name" data-title="Наименование">
+                        Шина Культор 10-16.5 10PR SKID STEER 50 TL
+                    </div>
+                    <div class="modal-order_count" data-title="Количество">
+                        20 шт.
+                    </div>
+                    <div class="modal-order_price" data-title="Сумма">
+                        123 457 р.
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-order_total">
+                Итого: 160 шт.<br> на сумму <span>124 224 р.</span>
+            </div>
+
+            <div class="modal-order_button_box">
+                <button class="go">Повторить заказ</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
